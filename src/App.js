@@ -1,11 +1,18 @@
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello from Hamza</h1>
-    </div>
-  );
+// Class Based Components
+class App extends Component {
+  render(){
+    const name = 'Hamza Ahmad';
+    const loading = false;
+    return (
+      <div className="App">
+        {loading ? <h2>loading...</h2>:<h1>Hello {name}</h1> }
+      </div>
+    );
+  }
+  
 }
 
 export default App;
