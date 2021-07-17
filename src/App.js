@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navbar from './Components/Navbar';
 
 // Class Based Components
 class App extends Component {
-  render(){
-    const name = 'Hamza Ahmad';
-    const loading = false;
+  
+  render(){   
     return (
       <div className="App">
-        {loading ? <h2>loading...</h2>:<h1>Hello {name}</h1> }
+        <Navbar />
       </div>
     );
   }
@@ -16,3 +16,4 @@ class App extends Component {
 }
 
 export default App;
+ 

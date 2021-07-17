@@ -4,6 +4,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Pre-define values*/
+:root {
+  --main-color: rgb(16, 109, 117);
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --warning-color: rgba(214, 34, 49, 0.883);
+  --success-color: rgb(17, 131, 97);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(--dark-color);
+}
+
+/* General Classes */
+.bg-main {
+  background: var(--main-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-main {
+  color: #fff;
+}
+
+.navbar {
+  padding: 0.8rem 1.5rem;
+  color: var(--light-color);
+}
+.navbar .fab {
+  padding-right: 0.5rem;
 }
