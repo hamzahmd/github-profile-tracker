@@ -1,6 +1,8 @@
 # GitHub Profile Tracker
 
-This project was built to learn React JS
+This project was built to learn React JS.
+
+- First, the components were formed with classes and props
 
 # Getting Started with Create React App
 
