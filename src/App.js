@@ -2,34 +2,36 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './Components/UI/Navbar';
 import Users from './Components/Users/Users';
+import Search from './Components/UI/Search';
 import axios from 'axios';
 
 // Class Based Components
 class App extends Component {
-  state ={
+  state = {
     users: [],
-    loading: false
-  }
-  
-  async componentDidMount(){
-    
-    this.setState({loading:true});
-    const res = await axios.get(`https://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`);
+    loading: false,
+  };
 
-    this.setState({users:res.data,loading: false})
+  async componentDidMount() {
+    this.setState({ loading: true });
+    const res = await axios.get(
+      `https://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
+    );
+
+    this.setState({ users: res.data, loading: false });
   }
 
-  render(){
+  render() {
     return (
-      <div className="App">
+      <div className='App'>
         <Navbar />
-        <div className="container">
-          <Users loading={this.state.loading} users={this.state.users}/>
+        <div className='container'>
+          <Search />
+          <Users loading={this.state.loading} users={this.state.users} />
         </div>
       </div>
     );
-}
+  }
 }
 
 export default App;
- 
