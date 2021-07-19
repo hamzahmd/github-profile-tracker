@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Navbar from './Components/UI/Navbar';
 import Users from './Components/Users/Users';
 
 // Class Based Components
-class App extends Component {
-  
-  render(){   
+const App = () => {
     return (
       <div className="App">
         <Navbar />
@@ -15,8 +13,6 @@ class App extends Component {
         </div>
       </div>
     );
-  }
-  
 }
 
 export default App;
