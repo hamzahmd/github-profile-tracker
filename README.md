@@ -4,6 +4,10 @@ This project was built to learn React JS.
 
 - First, the components were formed with classes and props
 
+## Libraries
+
+- Axios library is used to get the API data from GitHub
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
