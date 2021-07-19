@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import UserItem from './UserItem';
 import Loader from '../UI/Loader';
 import PropTypes from 'prop-types';
