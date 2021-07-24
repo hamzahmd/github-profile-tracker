@@ -1,12 +1,28 @@
 # GitHub Profile Tracker
 
-This project was built to learn React JS.
+## Preview
 
-- First, the components were formed with classes and props
+This reactjs app is deployed on the Surge Domain:
+
+[GitHub-Tracker](https://github-tracker.surge.sh/)
+
+## About Application
+
+In this application, you can search any profile by the name of GitHub users.
+This project is built to learn React JS, class components and functional components with hooks.
+
+- First, Class components are used for state management and functional components for stateless functions
+- React router is used to route between different pages without losing the data
+- After completing the application with class components, the app is converted into functional components with Hooks for state management.
+- The GitHub repo is also deployed with GitHub Actions for CI/CD operations.
 
 ## Libraries
 
 - Axios library is used to get the API data from GitHub
+
+## Project Inspiration
+
+- This project is built with the help of a course by [@bradtraversy](https://github.com/bradtraversy)
 
 # Getting Started with Create React App
 
