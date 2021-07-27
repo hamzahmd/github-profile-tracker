@@ -6,7 +6,12 @@ const Loader = () => (
     <img
       src={loader}
       alt='loading...'
-      style={{ width: '200px', margin: 'auto', display: 'block' }}
+      style={{
+        width: '200px',
+        margin: 'auto',
+        display: 'block',
+        borderRadius: '50%',
+      }}
     />
   </Fragment>
 );
