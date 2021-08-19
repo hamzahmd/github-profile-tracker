@@ -6,6 +6,8 @@ This reactjs app is deployed on the Surge Domain:
 
 [GitHub-Tracker](https://github-tracker.surge.sh/)
 
+![Preview](https://i.ibb.co/rtB54LF/react-project.png)
+
 ## About Application
 
 In this application, you can search any profile by the name of GitHub users.
